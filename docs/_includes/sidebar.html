@@ -1,0 +1,26 @@
+<div class="sidebar-inner">
+  <div class="brand">
+    <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+  </div>
+  <nav class="nav">
+    {%- assign chapters = site.data.sidebar.chapters -%}
+    {%- if chapters -%}
+      <ul>
+        {%- for ch in chapters -%}
+          <li>
+            <a href="{{ site.baseurl }}{{ ch.url }}">{{ ch.title }}</a>
+            {%- if ch.items -%}
+              <ul>
+                {%- for item in ch.items -%}
+                  <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a></li>
+                {%- endfor -%}
+              </ul>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- else -%}
+      <p>Add navigation in <code>_data/sidebar.yml</code>.</p>
+    {%- endif -%}
+  </nav>
+</div>

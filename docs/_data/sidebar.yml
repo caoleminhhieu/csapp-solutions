@@ -1,0 +1,8 @@
+chapters:
+  - title: Chapter 2
+    url: /02/
+    items:
+      - title: 2.58 — Detect Endianness
+        url: /02/2_58/
+      - title: 2.59 — Compose LSB
+        url: /02/2_59/

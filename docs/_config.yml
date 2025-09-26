@@ -1,0 +1,28 @@
+# Site settings for GitHub Pages
+# Minimal config using a supported theme
+
+title: CS:APP Solutions
+description: Solutions and notes for Computer Systems: A Programmer's Perspective
+
+# If this is a project site (user.github.io/repo), you can set baseurl to "/csapp-solutions"
+# and url to "https://user.github.io". Leaving blank works locally and on org/user sites.
+baseurl: "/csapp-solutions"
+url: "https://caoleminhhieu.github.io"
+
+theme: minima
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Optional: show future-proof place for navigation data if you add a custom header later
+# nav:
+#   - title: Home
+#     url: /
+#   - title: Chapter 2
+#     url: /02/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
